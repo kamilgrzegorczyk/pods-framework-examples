@@ -1,4 +1,8 @@
 <?php
+/* --------------------
+Simple code snippet showing how to use UI parameters in practice
+-------------------- */
+
 $object = pods('name_of_pod');
 $fields = array();
 
