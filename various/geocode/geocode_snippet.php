@@ -6,7 +6,6 @@
  * Author URI: http://lowgravity.pl
  * 
  * TODO: add JS functionality to display map frame and drop marker using mouse, display current coordinates on map
- * TODO: make coordinates field disabled
  *
  * !!!README!!!
  * Remember to exchange:
@@ -40,7 +39,7 @@ function lowgravity_geo_pre_save($pieces, $is_new) {
 	}
 
 	//preparing url
-	$geourl = "http://maps.google.com/maps/api/geocode/json?address=". strtolower($address) ."&sensor=false";
+	$geourl = "http://maps.google.com/maps/api/geocode/json?address=". $address ."&sensor=false";
 	
 	//get the geocoded info from Google
 	$geoinfo = wp_remote_get($geourl); 
